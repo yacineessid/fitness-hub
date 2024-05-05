@@ -1,0 +1,25 @@
+.container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 4px;
+}
+.card-text{
+  color: antiquewhite;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-difficulty{
+  width: fit-content;
+}
+.spinner-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+

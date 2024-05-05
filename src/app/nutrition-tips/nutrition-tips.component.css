@@ -1,0 +1,26 @@
+.article {
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  opacity: 0.9;
+
+}
+.article-title {
+  color: #333;
+}
+.article-date {
+  color: #666;
+}
+.article-image {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  height: 150px;
+}
+.article-content {
+  color: #444;
+}
+.article-link {
+  color: #007bff;
+}

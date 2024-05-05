@@ -1,0 +1,28 @@
+
+    <div class="container" style="color: whitesmoke;">
+      <h1 class="display-4">Welcome to Your Daily Workout</h1>
+      <p class="lead">Embark on a journey of self-discovery and transformation with your daily workout. Elevate your energy, sculpt your body, and sharpen your mind as you embrace the power of movement. Let each exercise be a step towards your best self.</p>
+    </div>
+<div class="container" *ngIf="!loading">
+  <div *ngFor="let muscle of muscles" class="card" style="width: 18rem; margin-bottom: 20px;opacity:0.9; background-color: rgb(94, 84, 84)">
+    <img class="card-img-top" [src]="muscle.imageUrl" alt="{{ muscle.name }} Image" >
+    <div class="card-body">
+      <div class="button-container">
+        <button class="btn btn-warning btn-difficulty" (click)="getExercises(muscle.name,'beginner')">
+          Beginner
+        </button>
+        <button class="btn btn-warning btn-difficulty" (click)="getExercises(muscle.name,'intermediate')">
+          Advanced
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="spinner-container" *ngIf="loading">
+  <div class="spinner-border text-warning" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+

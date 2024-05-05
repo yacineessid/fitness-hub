@@ -1,0 +1,10 @@
+<div *ngIf="exercises.length > 0" class="mt-4">
+  <div *ngFor="let exercise of exercises" class="card bg-dark text-white mb-3">
+    <div class="card-body">
+      <h3 class="card-title" style="color: #ecbf89;">{{ exercise.name }}</h3>
+      <p class="card-text"><strong>Type:</strong> {{ exercise.type }}</p>
+      <p class="card-text"><strong>Equipment:</strong> {{ exercise.equipment }}</p>
+      <p class="card-text"><strong>Instructions:</strong> {{ exercise.instructions }}</p>
+    </div>
+  </div>
+</div>
