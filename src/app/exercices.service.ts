@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class ExerciseService {
   private apiUrl = 'https://api.api-ninjas.com/v1/exercises';
-  private apiKey = environment.apiKey
+  private apiKey = environment.apiKey ||''
 
   constructor(private http: HttpClient) {}
 
