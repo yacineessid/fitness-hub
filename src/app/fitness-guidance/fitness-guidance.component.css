@@ -17,12 +17,12 @@
     }
 
     .guidance-section {
-      margin: 15px;
+      margin: 20px;
       border: 1px solid #ccc;
-      padding: 15px;
+      padding: 20px;
       border-radius: 8px;
       background-color: #f9f9f9;
-      opacity: 0.9;    }
+      opacity: 0.9;   }
 
     .content {
       text-align: center;
