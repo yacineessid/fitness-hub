@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
 import { DaschboardComponent } from './daschboard/daschboard.component';
 import { FormsModule } from '@angular/forms';
 import { ExercicesComponent } from './exercices/exercices.component';
@@ -13,7 +12,6 @@ import { FitnessGuidanceComponent } from './fitness-guidance/fitness-guidance.co
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     DaschboardComponent,
     ExercicesComponent,
     NutritionTipsComponent,
